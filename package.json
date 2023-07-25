@@ -19,7 +19,8 @@
       "express": "^4.17.2",
       "pg": "^8.4.0",
       "reflect-metadata": "^0.1.13",
-      "typeorm": "0.3.17"
+      "typeorm": "0.3.17",
+      "zod": "^3.21.4"
    },
    "scripts": {
       "start": "ts-node-dev --respawn --transpile-only --exit-child src/app.ts",
