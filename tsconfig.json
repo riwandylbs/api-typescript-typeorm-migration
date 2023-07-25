@@ -1,0 +1,17 @@
+{
+   "compilerOptions": {
+      "target": "ES2016",
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "module": "commonjs",
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "strict": true,
+      "strictPropertyInitialization": false,
+      "skipLibCheck": true,
+      "moduleResolution": "node",
+      "outDir": "./build",
+      "rootDir": "."
+      // "sourceMap": true
+   }
+}
