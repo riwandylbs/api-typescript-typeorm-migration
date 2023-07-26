@@ -13,11 +13,11 @@ export const createUser = async (input: CreateUserInput) => {
     )) as User;
 };
 
-export const findByEmail = async ( {email}: {email: string}) => {
+export const findByEmail = async ({email}: {email: string}) => {
     return await userRepository.findOneBy({email});
 };
 
-export const findById = async ( userId: number) => {
+export const findById = async (userId: number) => {
     return await userRepository.findOneBy({ id: userId })
 };
 
@@ -26,7 +26,7 @@ export const findUser = async ( query: Object ) => {
 };
 
 // ? Sign access and Refresh Tokens
-export const singTokens = async (user: User) => {
+export const signTokens = async (user: User) => {
     // Create session 
     redisClient.set((user.id).toLocaleString(), JSON.stringify(user), {
         EX: config.get<number>('redisCacheExpiresIn') * 60,
